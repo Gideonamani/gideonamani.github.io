@@ -1,0 +1,56 @@
+[
+  {
+    "platform_name": "VK",
+    "anchor_text": "vk.com/Gideonamani",
+    "url": "https://vk.com/Gideonamani",
+    "status": "Availble Often",
+    "description": "Currently in Russia. Most of my mates who I see on a daily basis are here, so I am also here often.",
+    "platform_name_small_caps": "vk",
+    "icon_url": "/assets/images/contacts/sprite.svg#vk"
+  },
+  {
+    "platform_name": "Facebook",
+    "anchor_text": "facebook.com/gmarress",
+    "url": "https://www.facebook.com/gmarress",
+    "status": "Rarely, if never",
+    "description": "I don't like it. I am still wondering why I opened an account in the first place.",
+    "platform_name_small_caps": "facebook",
+    "icon_url": "/assets/images/contacts/sprite.svg#facebook"
+  },
+  {
+    "platform_name": "Twitter",
+    "anchor_text": "twitter.com/Gideonamani",
+    "url": "https://twitter.com/Gideonamani",
+    "status": "Twice a Week",
+    "description": "Great communication platform, but sadly I am not as active here as I would like to be.",
+    "platform_name_small_caps": "twitter",
+    "icon_url": "/assets/images/contacts/sprite.svg#twitter"
+  },
+  {
+    "platform_name": "Gmail",
+    "anchor_text": "gmarress@gmail.com",
+    "url": "mailto:gmarress@gmail.com",
+    "status": "Often Check",
+    "description": "Informal. This is where I received most of the online subscription emails.",
+    "platform_name_small_caps": "gmail",
+    "icon_url": "/assets/images/contacts/sprite.svg#gmail"
+  },
+  {
+    "platform_name": "Yahoo Mail",
+    "anchor_text": "gmarress@yahoo.com",
+    "url": "mailto:gmarress@yahoo.com",
+    "status": "Once a Day",
+    "description": "Formal. This is where I send and receive relatively important messages.",
+    "platform_name_small_caps": "yahoo-mail",
+    "icon_url": "/assets/images/contacts/sprite.svg#yahoo-mail"
+  },
+  {
+    "platform_name": "Yandex Mail",
+    "anchor_text": "gmarress@yandex.ru",
+    "url": "mailto:gmarress@yandex.ru",
+    "status": "Once a Month",
+    "description": "Technical. Use this to debug mail server apis and such.",
+    "platform_name_small_caps": "yandex-mail",
+    "icon_url": "/assets/images/contacts/sprite.svg#yandex-mail"
+  }
+]

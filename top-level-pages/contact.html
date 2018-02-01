@@ -1,0 +1,19 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0002
+title: Contact Gideonamani
+description: A guide to getting in touch with me and actually get a reply.
+keywords: 
+image: 
+image_is_local: 
+image_alt: 
+permalink: /contact/
+---
+
+<div class="page-content contact-page like-markdown">
+	<h2 class="page-heading"> A guide to getting in touch with me and actually get a reply. </h2>
+	{% for contact_method in site.data.contact_items %}
+		{% include contact-item.html contact_item=contact_method %}
+	{% endfor %}
+</div>

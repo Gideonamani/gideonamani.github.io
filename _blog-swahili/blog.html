@@ -1,0 +1,103 @@
+---
+layout: personal-default-swahili
+lang: "sw"
+core_page_id: p0003
+title: Ukurasa mkuu wa Blog
+description: Salamu Mimi ni Gideonamani. Mwandishi chipukizi. Hapa unaweza kuona vitu kadhaa nilivyoandika.
+keywords: first-post,blog,gmarress,Gideonamani
+image: https://mabina.com/assets/images/share-card-images/some_image.jpg
+image_is_local: false
+image_alt: Skrinishoti ya ukurasa mkuu wa blog ya Gideonamani.
+permalink: /sw/blog/
+blog_page_type: list
+---
+
+<div class="blog-homepage">
+
+  <h1 class="page-heading">Aina Kuu za Makala</h1>
+
+  <ul class="post-categories">
+    <li>
+      <a href="/sw/blog/book-summaries/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#book-summaries"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Muhtasari wa Vitabu</h3>
+            <p class="category-description">
+              Muhtasari wa vitabu mbalimbali niliyosoma.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/sw/blog/cool-projects/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#cool-projects"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Miradi Mikali</h3>
+            <p class="category-description">
+              Baadhi ya ufafanuzi kuhusu miradi mbali mbali niliyoifanya.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/sw/blog/random-thoughts/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#random-thoughts"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Mawazo Nasibu</h3>
+            <p class="category-description">
+              Nadhani hii inajieleza. Ninafafanua mambo ambayo nimekuwa nikiyawaza.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/sw/blog/travels/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#travels"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Safari</h3>
+            <p class="category-description">
+              Baadhi ya mambo kutoka sehemu mbalimbali duniani yanayopaswa kusimuliwa.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="recent-posts-heading page-heading"> Makala ya hivi karibuni </h2>
+  <ul class="recent-posts-list post-list">
+    {% for post in site.blog-swahili %}
+      {% if post.blog_page_type == "post" %}
+
+        {% include post-list-item.html post_data=post %}
+      
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">Fuatilia <a href="{{ "/feed.xml" | prepend: site.baseurl }}">kupitia RSS</a></p>
+
+</div>

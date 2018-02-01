@@ -1,0 +1,103 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0003
+title: Gideonamani Blog Home
+description: Hello I am Gideonamani. An amateur blogger. Here are a couple of things I have written.
+keywords: first-post,blog,gmarress,Gideonamani
+image: https://mabina.com/assets/images/share-card-images/some_image.jpg
+image_is_local: false
+image_alt: Gideonamani Blog Home Page Screenshot
+permalink: /blog/
+blog_page_type: list
+---
+
+<div class="blog-homepage">
+
+  <h1 class="page-heading">Main Post Categories</h1>
+
+  <ul class="post-categories">
+    <li>
+      <a href="/blog/book-summaries/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#book-summaries"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Book Summaries</h3>
+            <p class="category-description">
+              Summary of some interesting books I have read.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/blog/cool-projects/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#cool-projects"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Cool Projects</h3>
+            <p class="category-description">
+              Some explanations on projects I have done.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/blog/random-thoughts/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#random-thoughts"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Random Thoughts</h3>
+            <p class="category-description">
+              I think this is self explanatory. I take a deep dive on matters I have been thinkings about.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="/blog/travels/">
+        <div class="blog-category-item">
+          <div class="blog-category-icon">
+            <svg viewBox="0 0 200 200" class="icon">
+                <use xlink:href="/assets/images/Blog Categories Sprite.svg#travels"></use>
+            </svg>
+          </div>
+          <div class="blog-category-details">
+            <h3 class="category-heading">Travels</h3>
+            <p class="category-description">
+              Some wonderful experiences from around the world worth sharing.
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="recent-posts-heading page-heading"> Recent Posts </h2>
+  <ul class="recent-posts-list post-list">
+    {% for post in site.blog %}
+      {% if post.blog_page_type == "post" %}
+
+        {% include post-list-item.html post_data=post %}
+      
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

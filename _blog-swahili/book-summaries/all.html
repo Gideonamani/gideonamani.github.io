@@ -1,0 +1,36 @@
+---
+layout: personal-default-swahili
+lang: "sw"
+core_page_id: p0011
+title: Orodha ya muhtasari wa vitabu
+description: Jitihada zangu kujaribu kufipisha na kuchuja kitabu kupata dhana kadhaa muhimu.
+keywords: muhtasari-wa-vitabu,blog,muhtasari,Gideonamani
+image: 
+image_is_local: false
+image_alt:
+permalink: /sw/blog/book-summaries/
+blog_page_type: list
+blog_page_category: book-summaries
+---
+
+<div class="book-summaries-post-list-page">
+
+  <h1 class="page-heading">Makala ya Muhtasari wa Vitabu</h1>
+
+  <ul class="post-list">
+    {% for post in site.blog-swahili %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "book-summaries" %}
+      
+        {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    Muhtasari wa Vitabu ni jitihada za kujaribu kufipisha na kuchuja kitabu kupata dhana kadhaa muhimu. Uandishi wa muhtasari unasaidia kuimarisha uwezo wa mtu kutathmini na kuchambua mawazo mbalimbali. Muhtasari pia hutoa mtazamo mbadala kwa wale wote waliosoma kitabu, wanaotamani kukisoma kitabu au wamekisikia tu.
+  </p>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

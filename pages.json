@@ -1,0 +1,15 @@
+---
+layout: null
+---
+[
+
+{% for page in site.pages %}
+  {
+    "title": "{{page.title}}",
+    "core_page_id": "{{page.core_page_id}}",
+    "lang": "{{page.lang}}",
+    "url": "{{page.url}}"
+  }
+{% endfor %}
+
+]

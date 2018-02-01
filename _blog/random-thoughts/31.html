@@ -1,0 +1,39 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0015
+title: 31st Reflections
+description: 
+keywords: 
+image: 
+image_is_local: false
+image_alt: 
+permalink: /blog/random-thoughts/31/
+blog_page_type: list
+blog_page_category: random-thoughts
+blog_page_subcategory: 31
+random_thoughts_tab: "31"
+---
+
+<div class="random-thoughts-post-list-page {{page.random_thoughts_tab}}">
+
+  <h1 class="page-heading">31st Reflections</h1>
+
+  {% include random-thoughts-main-tabs.html %}
+
+  <ul class="post-list">
+    {% for post in site.blog %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "random-thoughts" and post.blog_page_subcategory == 31 %}
+        
+      {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    
+  </p>
+
+
+</div>

@@ -1,0 +1,69 @@
+# Welcome to Jekyll!
+title: Gideonamani
+email: hello@gideonamani.com
+description: > # this means to ignore newlines until "baseurl:"
+  
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://example.com" # the base hostname & protocol for your site
+
+roothost: "https://gideonamani.github.io"
+
+twitter_username: Gideonamani
+github_username:  Gideonamani
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+theme: minima
+
+port: 4000
+
+
+# Languages
+languages:
+  en:
+    code: en
+    name: English
+    dir: /
+
+  sw:
+    code: sw
+    name: Swahili
+    dir: /sw/
+
+
+# Collections
+collections:
+  blog:
+    output: TRUE
+    lang: en
+    permalink: /blog/:path/
+
+  awesome-lists:
+    output: TRUE
+    lang: en
+    permalink: /awesome-lists/:path/
+
+  talks:
+    output: TRUE
+    lang: en
+    permalink: /talks/:path/
+
+
+
+  blog-swahili:
+    output: TRUE
+    permalink: /sw/blog/:path/
+    lang: sw
+
+  awesome-lists-swahili:
+    output: TRUE
+    lang: sw
+    permalink: /sw/awesome-lists/:path/
+
+  talks-swahili:
+    output: TRUE
+    lang: sw
+    permalink: /sw/talks/:path/
+    bina: cool

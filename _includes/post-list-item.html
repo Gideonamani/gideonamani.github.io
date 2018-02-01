@@ -1,0 +1,23 @@
+<li class="post-list-item">
+  <h2>
+    <a class="post-link" href="{{ include.post_data.url }}">{{ include.post_data.title | escape }}</a>
+  </h2>
+  <p class="post-meta">
+    <span class="post-category">
+      <a href="{{site.languages[page.lang].dir}}blog/{{include.post_data.blog_page_category}}/">
+        {{site.data.translations.blog_categories[include.post_data.blog_page_category][page.lang]}}
+      </a>
+    </span>
+
+    {% if include.post_data.blog_page_subcategory %}
+    <span class="post-subcategory">
+      <a href="{{site.languages[page.lang].dir}}blog/{{include.post_data.blog_page_category}}/{{include.post_data.blog_page_subcategory}}/">
+        {{site.data.translations.blog_categories[include.post_data.blog_page_subcategory][page.lang]}}
+      </a>
+    </span>
+    {% endif %}
+    
+  </p>
+  <p class="post-meta post-key-words">{{ include.post_data.keywords }}</p>
+  <p class="post-description">{{ include.post_data.description }}</span>
+</li>

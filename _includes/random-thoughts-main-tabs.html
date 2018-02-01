@@ -1,0 +1,18 @@
+  <div class="tabs">
+    <a href="{{site.languages[page.lang].dir}}blog/random-thoughts" class="tab 
+    {% if page.random_thoughts_tab == 'all' %} active {% endif %}">
+      <span>{{ site.data.translations.blog_categories.all[page.lang] | upcase }}</span>
+    </a>
+    <a href="{{site.languages[page.lang].dir}}blog/random-thoughts/on" class="tab 
+    {% if page.random_thoughts_tab == 'on' %} active {% endif %}">
+      <span>{{ site.data.translations.blog_categories["on"][page.lang] | upcase }}</span>
+    </a>
+    <a href="{{site.languages[page.lang].dir}}blog/random-thoughts/vs" class="tab 
+    {% if page.random_thoughts_tab == 'vs' %} active {% endif %}">
+      <span>{{ site.data.translations.blog_categories.vs[page.lang] | upcase }}</span>
+    </a>
+    <a href="{{site.languages[page.lang].dir}}blog/random-thoughts/31" class="tab 
+    {% if page.random_thoughts_tab == '31' %} active {% endif %}">
+      <span>31</span>
+    </a>
+  </div>

@@ -1,0 +1,20 @@
+---
+layout: personal-default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Categories</h1>
+
+  {% for p in site.categories.postdms %}
+    <p>{{ p.image }}</p>
+    <p>{{ p.url | prepend: site.baseurl }}</p>
+  {% endfor %}
+
+
+  <h1 class="page-heading">Tags</h1>
+  {% for p in site.tags.cool %}
+    {{ p.keywords }}
+  {% endfor %}
+
+</div>

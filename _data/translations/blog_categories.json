@@ -1,0 +1,34 @@
+{
+	"cool-projects": {
+		"en": "cool-projects",
+		"sw": "miradi-mikali"
+	},
+	"book-summaries": {
+		"en": "book-summaries",
+		"sw": "muhtasari-wa-vitabu"
+	},
+	"random-thoughts": {
+		"en": "random-thoughts",
+		"sw": "mawazo-nasibu"
+	},
+	"travels": {
+		"en": "travels",
+		"sw": "safari"
+	},
+	"all": {
+		"en": "all",
+		"sw": "yote"
+	},
+	"on": {
+		"en": "on",
+		"sw": "juu"
+	},
+	"vs": {
+		"en": "vs",
+		"sw": "vs"
+	},
+	"31": {
+		"en": "31",
+		"sw": "31"
+	}
+}

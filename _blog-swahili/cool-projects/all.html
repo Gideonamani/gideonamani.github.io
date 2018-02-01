@@ -1,0 +1,35 @@
+---
+layout: personal-default-swahili
+lang: "sw"
+core_page_id: p0012
+title: Miradi Mikali
+description: 
+keywords: 
+image: 
+image_is_local: false
+image_alt: 
+permalink: /sw/blog/cool-projects/
+blog_page_type: list
+blog_page_category: cool-projects
+---
+
+<div class="cool-projects-post-list-page">
+
+  <h1 class="page-heading">Miradi Mikali</h1>
+
+  <ul class="post-list">
+    {% for post in site.blog-swahili %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "cool-projects" %}
+      
+        {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    Mara moja moja najitahidi kubuni na kutengeneza kitu kinacho husiana na utengenezaji wa tovuti. Kama kuna kitu muhimu ambacho kinafaa kukumbukwa ambacho nimejifunza wakati wa utengenezaji, nitajaribu kukiandika na kukifafanua hapa.
+
+  </p>
+
+</div>

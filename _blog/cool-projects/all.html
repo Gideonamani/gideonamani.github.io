@@ -1,0 +1,34 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0012
+title: Cool Projects
+description: 
+keywords: 
+image: 
+image_is_local: false
+image_alt: 
+permalink: /blog/cool-projects/
+blog_page_type: list
+blog_page_category: cool-projects
+---
+
+<div class="cool-projects-post-list-page">
+
+  <h1 class="page-heading">Cool Projects</h1>
+
+  <ul class="post-list">
+    {% for post in site.blog %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "cool-projects" %}
+      
+        {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    Now and again I try to design and code up something in the realms of web development. If there's something integral that is worth remembering I have learned or picked up during development, I will try my best to document it here.
+  </p>
+
+</div>

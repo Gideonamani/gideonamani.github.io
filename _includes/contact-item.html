@@ -1,0 +1,19 @@
+<div class="contact-item">
+	<h3 class="contact-item-heading">{{include.contact_item.platform_name}}</h3>
+	<div class="contact-content">
+		<div class="contact-platform-icon">
+            <a href="{{include.contact_item.url}}">
+                <svg viewBox="0 0 200 200" class="icon">
+                    <use xlink:href="{{include.contact_item.icon_url}}"></use>
+                </svg>
+            </a>
+		</div>
+		<div class="contact-platform-details">
+			<p class="status">{{include.contact_item.status}}</p>
+			<p class="description">{{include.contact_item.description}}</p>
+			<p class="link">
+				<a href="{{include.contact_item.url}}">{{include.contact_item.anchor_text}}</a>
+			</p>
+		</div>
+	</div>
+</div>

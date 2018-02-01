@@ -1,0 +1,38 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0016
+title: Random Thoughts On
+description: 
+keywords: 
+image: 
+image_is_local: false
+image_alt: 
+permalink: /blog/random-thoughts/on/
+blog_page_type: list
+blog_page_category: random-thoughts
+blog_page_subcategory: "on"
+random_thoughts_tab: "on"
+---
+
+<div class="random-thoughts-post-list-page {{page.random_thoughts_tab}}">
+
+  <h1 class="page-heading"> Random Thoughts On </h1>
+
+  {% include random-thoughts-main-tabs.html %}
+
+  <ul class="post-list">
+    {% for post in site.blog %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "random-thoughts" and post.blog_page_subcategory == "on" %}
+      
+        {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    
+  </p>
+
+</div>

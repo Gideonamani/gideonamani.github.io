@@ -1,0 +1,56 @@
+[
+  {
+    "platform_name": "VK",
+    "anchor_text": "vk.com/Gideonamani",
+    "url": "https://vk.com/Gideonamani",
+    "status": "Ninapatika muda mwingi",
+    "description": "Kwa sasa nipo Urusi. Na marafiki wengi ninaoonana nao kila siku wapo hapa, kwa hiyo nipo hapa muda mwingi.",
+    "platform_name_small_caps": "vk",
+    "icon_url": "/assets/images/contacts/sprite.svg#vk"
+  },
+  {
+    "platform_name": "Facebook",
+    "anchor_text": "facebook.com/gmarress",
+    "url": "https://www.facebook.com/gmarress",
+    "status": "Ni kama sipo kabisa",
+    "description": "Sifurahii kutumia. Bado ninafikiria ni kwa sababu gani nilifungua akaunti.",
+    "platform_name_small_caps": "facebook",
+    "icon_url": "/assets/images/contacts/sprite.svg#facebook"
+  },
+  {
+    "platform_name": "Twitter",
+    "anchor_text": "twitter.com/Gideonamani",
+    "url": "https://twitter.com/Gideonamani",
+    "status": "Mara mbili kwa wiki",
+    "description": "Sehemu nzuri kweli ya mawasiliano, lakini siitumii kwa kiasi ambacho ningependa.",
+    "platform_name_small_caps": "twitter",
+    "icon_url": "/assets/images/contacts/sprite.svg#twitter"
+  },
+  {
+    "platform_name": "Gmail",
+    "anchor_text": "gmarress@gmail.com",
+    "url": "mailto:gmarress@gmail.com",
+    "status": "Nacheki mara kwa mara",
+    "description": "Kishkaji. Hapo ndipo ninapokea barua pepe za vitu vingi nilivyojisajili mtandaoni.",
+    "platform_name_small_caps": "gmail",
+    "icon_url": "/assets/images/contacts/sprite.svg#gmail"
+  },
+  {
+    "platform_name": "Yahoo Mail",
+    "anchor_text": "gmarress@yahoo.com",
+    "url": "mailto:gmarress@yahoo.com",
+    "status": "Mara moja kwa siku",
+    "description": "Kiofisi. This is where I send and receive relatively important messages.",
+    "platform_name_small_caps": "yahoo-mail",
+    "icon_url": "/assets/images/contacts/sprite.svg#yahoo-mail"
+  },
+  {
+    "platform_name": "Yandex Mail",
+    "anchor_text": "gmarress@yandex.ru",
+    "url": "mailto:gmarress@yandex.ru",
+    "status": "Mara moja kwa mwezi",
+    "description": "Kiufundi. Mara nyingi natumia kujaribu server mbali mbali za email.",
+    "platform_name_small_caps": "yandex-mail",
+    "icon_url": "/assets/images/contacts/sprite.svg#yandex-mail"
+  }
+]

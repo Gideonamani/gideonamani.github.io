@@ -1,0 +1,36 @@
+---
+layout: personal-default
+lang: "en"
+core_page_id: p0011
+title: List of book summaries
+description: My attempts to condense a book or a chapter from a book into a few important key concepts.
+keywords: book-summaries,blog,Gideonamani
+image: 
+image_is_local: false
+image_alt: 
+permalink: /blog/book-summaries/
+blog_page_type: list
+blog_page_category: book-summaries
+---
+
+<div class="book-summaries-post-list-page">
+
+  <h1 class="page-heading">Book Summaries Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.blog %}
+      {% if post.blog_page_type == "post" and post.blog_page_category == "book-summaries" %}
+      
+        {% include post-list-item.html post_data=post %}
+
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <p class="category-explainer">
+    Book summaries are attempts to condense a book or a chapter from a book into a few important key concepts. They should serve to improve one's assessment and analysis skill while at the same time provide an alternate view of a book to those who have either read, wished to read or just heard of the book.
+  </p>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

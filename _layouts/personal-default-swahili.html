@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="sw">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+        <meta name="description" content="{{page.description}}">
+        <meta name="keywords" content="{{page.keywords}}">
+        
+        <!-- App Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+        <meta name="apple-mobile-web-app-title" content="Gideonamani">
+        <meta name="application-name" content="Gideonamani">
+        <meta name="theme-color" content="#E4E4E4">
+        
+        
+        <!--  Essential META Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{{page.title}}">
+        <meta property="og:description" content="{{page.description}}">
+        {% if  page.image_is_local == true %}
+        <meta property="og:image" content="{{site.roothost}}{{page.image}}">
+        {% else %}
+        <meta property="og:image" content="{{page.image}}">
+        {% endif %}
+        <meta property="og:url" content="{{site.roothost}}{{page.url}}">
+        <meta name="twitter:card" content="summary">
+        
+        <!--  Non-Essential, But Recommended -->
+        <meta property="og:site_name" content="{{site.name}}">
+        <meta name="twitter:image:alt" content="{{page.image_alt}}">
+
+        <title>{{page.title}}</title>
+
+        <link rel="stylesheet" href="/assets/css/main.css">
+        {% if  page.is_markdown == true %}
+        <link rel="stylesheet" href="/assets/css/markdown.css">
+        {% endif %}
+
+    </head>
+    <body>
+        {% include social-icons-sprite.html %}
+        <div class="page-container">
+            <header class="page-toolbar">
+                <div class="logo">
+                    <a href="/sw/">
+                        <img src="/assets/images/site-icons/Icon 512 transparent.png">
+                    </a>
+                </div>
+
+                <div class="nav-links-wrapper">
+                    <button id="expand-top-nav" class="expander">
+                        <span>&#9776;</span>
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="/sw/">Nyumbani</a></li>
+                            <li><a href="/sw/about/">Kuhusu</a></li>
+                            <li><a href="/sw/contact/">Wasiliana</a></li>
+                            <li><a href="/sw/blog/">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
+        {% if  page.is_markdown == true %}
+            <div class="content-container markdown-body">
+        {% else %}
+            <div class="content-container">
+        {% endif %}
+
+            {{ content }}
+
+
+
+        {% if page.has_disqus_comments == true %}
+            {% include disqus_snippet.html %}
+        {% endif %}
+            </div>
+
+            <footer class="page-footer">
+                <!-- <address>
+                    <span>Far place</span>
+                    <span>Somewhere</span>
+                    <span>Earth</span>
+                </address> -->
+                <nav class="footer-main-item">
+                    <ul>
+                        <li><a href="/sw/">Nyumbani</a></li>
+                        <li><a href="/sw/about/">Kuhusu</a></li>
+                        <li><a href="/sw/contact/">Wasiliana</a></li>
+                        <li><a href="/sw/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-main-item language-picker">
+                    Lugha:
+                    {% include language-picker.html %}
+                </div>
+
+                <div class="contacts footer-main-item">
+                    <p class="email"><a href="mailto:gmarress@gmail.com">gmarress@gmail.com</a></p>
+                    <div class="social-contacts">
+                        <span>
+                            <a href="https://www.facebook.com/gmarress">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://vk.com/Gideonamani">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a>
+                       </span>
+                        <span>
+                            <a href="https://github.com/Gideonamani">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+                            </a>
+                       </span>
+                        <span>
+                            <a href="https://youtube.com/">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                            </a>
+                       </span>
+                        <span>
+                            <a href="https://twitter.com/Gideonamani">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                       </span>
+                        <span>
+                            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                                <svg viewBox="0 0 200 200" class="icon">
+                                    <use xlink:href="#rss"></use>
+                                </svg>
+                            </a>
+                       </span>
+                    </div>
+                </div>
+                <div class="footer-main-item">
+                    <h6 class="page-copyright">&copy; 2018. Haki zote zimehifadhiwa.</h6>
+                </div>
+            </footer>
+        </div>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

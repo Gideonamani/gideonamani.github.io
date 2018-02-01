@@ -1,0 +1,16 @@
+<select onchange="location = this.value;">
+    {% assign pagelang = page.lang %}
+    {% unless pagelang %}
+      {% assign pagelang = "en" %}
+    {% endunless %}
+
+    {% assign pglangdir = site.languages[pagelang].dir %}
+
+    {% for language in site.languages %}
+    {% assign lang = language[1] %}
+         <option value="{{page.url | replace_first : pglangdir, lang.dir }}" 
+         {% if page.lang == lang.code %} selected {% endif %}>
+            <a href=""> {{ lang.name }} </a>
+         </option>
+    {% endfor %}
+</select>

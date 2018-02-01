@@ -1,0 +1,19 @@
+---
+layout: personal-default-swahili
+lang: "sw"
+core_page_id: p0002
+title: Wasiliana na Gideonamani
+description: Mwongozo wa jinsi ya kuwasiliana na mimi na kuweza kujibiwa.
+keywords: 
+image: 
+image_is_local: 
+image_alt: 
+permalink: /sw/contact/
+---
+
+<div class="page-content contact-page like-markdown">
+	<h2 class="page-heading"> Mwongozo wa jinsi ya kuwasiliana na mimi na kuweza kujibiwa. </h2>
+	{% for contact_method in site.data.contact_items_swahili %}
+		{% include contact-item.html contact_item=contact_method %}
+	{% endfor %}
+</div>

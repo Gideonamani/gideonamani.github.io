@@ -1,0 +1,236 @@
+{
+  "p0000": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Gideonamani",
+          "url": "/"
+        },
+        "sw": {
+          "title": "Gideonamani",
+          "url": "/sw/"
+        }
+      }
+  },
+  "p0001": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "About Gideonamani.com",
+          "url": "/about/"
+        },
+        "sw": {
+          "title": "Kuhusu Gideonamani.com",
+          "url": "/sw/about/"
+        }
+      }
+  },
+  "p0002": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Contact Gideonamani",
+          "url": "/about/"
+        },
+        "sw": {
+          "title": "Wasiliana na Gideonamani",
+          "url": "/sw/about/"
+        }
+      }
+  },
+  "p0003": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Blog Home",
+          "url": "/blog/"
+        },
+        "sw": {
+          "title": "Ukurasa mkuu wa Blog",
+          "url": "/sw/blog/"
+        }
+      }
+  },
+  "p0004": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Gideonamani's Markdown Cheat Sheet",
+          "url": "/markdown/"
+        },
+        "sw": {
+          "title": "Chabo ya Markdown ya Gideonamani",
+          "url": "/sw/markdown/"
+        }
+      }
+  },
+  "p0005": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "All Awesome Lists",
+          "url": "/awesome-lists/"
+        },
+        "sw": {
+          "title": "Orodha zote kabambe",
+          "url": "/sw/awesome-lists/"
+        }
+      }
+  },
+  "p0006": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Great Quotes",
+          "url": "/awesome-lists/great-quotes/"
+        },
+        "sw": {
+          "title": "Nukuu Noma",
+          "url": "/sw/awesome-lists/great-quotes/"
+        }
+      }
+  },
+  "p0007": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Movies Watched",
+          "url": "/awesome-lists/movies-watched/"
+        },
+        "sw": {
+          "title": "Muvi Nilizoangalia",
+          "url": "/sw/awesome-lists/movies-watched/"
+        }
+      }
+  },
+  "p0008": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "",
+          "url": ""
+        },
+        "sw": {
+          "title": "",
+          "url": ""
+        }
+      }
+  },
+  "p0011": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "List of book summaries",
+          "url": "/blog/book-summaries/"
+        },
+        "sw": {
+          "title": "Orodha ya muhtasari wa vitabu",
+          "url": "/sw/blog/book-summaries/"
+        }
+      }
+  },
+  "p0012": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Cool Projects",
+          "url": "/blog/cool-projects/"
+        },
+        "sw": {
+          "title": "Miradi Mikali",
+          "url": "/sw/blog/cool-projects/"
+        }
+      }
+  },
+  "p0013": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Travels",
+          "url": "/blog/travels/"
+        },
+        "sw": {
+          "title": "Safari",
+          "url": "/sw/blog/travels/"
+        }
+      }
+  },
+  "p0014": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "All random thoughts posts",
+          "url": "/blog/random-thoughts/"
+        },
+        "sw": {
+          "title": "Makala yote ya mawazo nasibu",
+          "url": "/sw/blog/random-thoughts/"
+        }
+      }
+  },
+  "p0015": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "31st Reflections",
+          "url": "/blog/random-thoughts/31/"
+        },
+        "sw": {
+          "title": "Tafakari za tarehe 31",
+          "url": "/sw/blog/random-thoughts/31/"
+        }
+      }
+  },
+  "p0016": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Random Thoughts On",
+          "url": "/blog/random-thoughts/on/"
+        },
+        "sw": {
+          "title": "Mawazo Nasibu Juu ya",
+          "url": "/sw/blog/random-thoughts/on/"
+        }
+      }
+  },
+  "p0017": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Vs thoughts",
+          "url": "/blog/random-thoughts/vs/"
+        },
+        "sw": {
+          "title": "Chambuzi vs",
+          "url": "/sw/blog/random-thoughts/vs/"
+        }
+      }
+  },
+  "p1517482524097": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "The media is the metaphor",
+          "url": "/blog/book-summaries/the-medium-is-the-metaphor/"
+        },
+        "sw": {
+          "title": "Njia ya usambazaji ndiyo sitiari",
+          "url": "/sw/blog/book-summaries/the-medium-is-the-metaphor/"
+        }
+      }
+  },
+  "p1517482815493": {
+    "languages": ["en", "sw"],
+    "meta" : {
+      "en": {
+          "title": "Building a Jekyll multilingual blog",
+          "url": "/blog/cool-projects/building-a-jekyll-multilingual-blog/"
+        },
+        "sw": {
+          "title": "Kutengeneza blog ya lugha kadhaa kwa kutumia Jekyll",
+          "url": "/sw/blog/cool-projects/building-a-jekyll-multilingual-blog/"
+        }
+      }
+  }
+}
