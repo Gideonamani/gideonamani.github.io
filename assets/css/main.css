@@ -1,10 +1,10 @@
 :root {
-	--text-color: #212121;
-	--bg-color: #fbfbfb;
-	--text-accent: #757575;
-	--bg-accent: #e4e4e4;
-	--primary-color: purple;
-	--secondary-color: teal;
+    --text-color: #212121;
+    --bg-color: #f9fafb;
+    --accent: #007acc;
+    --bg-accent: #e6f0fa;
+    --primary-color: #3366ff;
+    --secondary-color: #00bfa6;
     --slate-gray: #607D8B;
 	--white: whitesmoke;
 	--min-width: 240px;
@@ -300,6 +300,30 @@ li.post-list-item {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.hero {
+  background-image: url('/assets/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.hero h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 1.5rem; }
+.hero .lead { font-size: 1.2rem; margin-bottom: 2rem; }
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.primary-btn { background-color: var(--primary-color); color: white; }
+.secondary-btn { background-color: var(--secondary-color); color: white; }
+.primary-btn:hover,
+.secondary-btn:hover { opacity: 0.9; }
+
 
 
 /*body{background-color: teal;}*/
