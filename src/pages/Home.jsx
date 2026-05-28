@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import translations from '../data/translations';
+import Terminal from '../components/Terminal';
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -16,14 +17,17 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="page-container">
-          <h1 className="hero-title">{t.hero.greeting}</h1>
-          <p className="hero-subtitle">{t.hero.subtitle}</p>
-          <p className="hero-description">{t.hero.description}</p>
-          <div className="hero-actions">
-            <Link to="/blog" className="btn btn-primary">{t.hero.cta1}</Link>
-            <Link to="/about" className="btn btn-secondary">{t.hero.cta2}</Link>
+        <div className="page-container hero-grid">
+          <div className="hero-text-block">
+            <h1 className="hero-title">{t.hero.greeting}</h1>
+            <p className="hero-subtitle">{t.hero.subtitle}</p>
+            <p className="hero-description">{t.hero.description}</p>
+            <div className="hero-actions">
+              <Link to="/blog" className="btn btn-primary">{t.hero.cta1}</Link>
+              <Link to="/about" className="btn btn-secondary">{t.hero.cta2}</Link>
+            </div>
           </div>
+          <Terminal />
         </div>
       </section>
 

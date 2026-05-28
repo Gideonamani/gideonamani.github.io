@@ -805,3 +805,209 @@ button {
     flex-direction: column;
   }
 }
+
+/* =============================================
+   Interactive Dev Terminal CSS
+   ============================================= */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-grid .hero-description {
+  margin: 0 0 40px 0;
+}
+
+.hero-grid .hero-actions {
+  justify-content: flex-start;
+}
+
+/* Terminal Window styling */
+.terminal-window {
+  background: rgba(10, 15, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 130, 246, 0.1);
+  overflow: hidden;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.terminal-header {
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.terminal-dot.close { background: #ff5f56; }
+.terminal-dot.minimize { background: #ffbd2e; }
+.terminal-dot.maximize { background: #27c93f; }
+
+.terminal-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.terminal-body {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #38bdf8;
+}
+
+/* Custom scrollbar for terminal body */
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.terminal-welcome {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.terminal-history-item {
+  margin-bottom: 8px;
+}
+
+.terminal-history-cmd {
+  color: #f3f4f6;
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-history-cmd::before {
+  content: "guest@gideon-space:~$";
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.terminal-history-out {
+  margin-top: 4px;
+  color: #38bdf8;
+  white-space: pre-wrap;
+  padding-left: 12px;
+  border-left: 2px solid rgba(56, 189, 248, 0.15);
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-input-prefix {
+  color: #a855f7;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.terminal-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.terminal-input-element {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #f3f4f6 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.terminal-input-element::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.terminal-quick-actions {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  flex-wrap: wrap;
+}
+
+.terminal-action-btn {
+  font-size: 0.78rem !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: var(--text-secondary) !important;
+  transition: all var(--transition-fast) !important;
+  font-family: 'Consolas', monospace !important;
+}
+
+.terminal-action-btn:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border-color: rgba(139, 92, 246, 0.3) !important;
+  color: #c084fc !important;
+}
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+  .hero-grid .hero-description {
+    margin: 0 auto 40px;
+  }
+  .hero-grid .hero-actions {
+    justify-content: center;
+  }
+}
+
