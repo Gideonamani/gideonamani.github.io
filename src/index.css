@@ -113,6 +113,83 @@ body.light-mode .btn-secondary:hover {
   background: rgba(15, 23, 42, 0.08);
 }
 
+/* Light Mode Terminal styles */
+body.light-mode .terminal-window {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 30px rgba(59, 130, 246, 0.05);
+}
+
+body.light-mode .terminal-header {
+  background: rgba(15, 23, 42, 0.02);
+  border-bottom-color: rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .terminal-title {
+  color: #475569;
+}
+
+body.light-mode .terminal-body {
+  color: #0284c7;
+}
+
+body.light-mode .terminal-welcome {
+  color: #475569;
+}
+
+body.light-mode .terminal-history-cmd {
+  color: #0f172a;
+}
+
+body.light-mode .terminal-history-out {
+  color: #0369a1;
+  border-left-color: rgba(3, 105, 161, 0.15);
+}
+
+body.light-mode .terminal-input-element {
+  color: #0f172a !important;
+}
+
+body.light-mode .terminal-input-element::placeholder {
+  color: rgba(15, 23, 42, 0.3);
+}
+
+body.light-mode .terminal-quick-actions {
+  background: rgba(15, 23, 42, 0.01);
+  border-top-color: rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .terminal-action-btn {
+  background: rgba(15, 23, 42, 0.03) !important;
+  border-color: rgba(15, 23, 42, 0.06) !important;
+  color: #475569 !important;
+}
+
+body.light-mode .terminal-action-btn:hover {
+  background: rgba(139, 92, 246, 0.08) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+  color: #7e22ce !important;
+}
+
+/* Light Mode Theme Customizer styles */
+body.light-mode .theme-customizer-trigger {
+  background: rgba(255, 255, 255, 0.85);
+  color: #475569;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+body.light-mode .theme-customizer-trigger:hover {
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.16);
+}
+
+body.light-mode .theme-customizer-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
 /* =============================================
    Global Resets
    ============================================= */
