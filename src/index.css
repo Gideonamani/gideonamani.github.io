@@ -81,6 +81,38 @@ body.theme-glacier {
   --glow-purple: rgba(6, 182, 212, 0.15);
 }
 
+body.light-mode {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(255, 255, 255, 0.9);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-hover: rgba(15, 23, 42, 0.16);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --glow-blue: rgba(59, 130, 246, 0.07);
+  --glow-purple: rgba(139, 92, 246, 0.07);
+}
+
+body.light-mode .site-header {
+  background: rgba(248, 250, 252, 0.8);
+}
+
+@media (max-width: 768px) {
+  body.light-mode .header-nav {
+    background: rgba(248, 250, 252, 0.98);
+  }
+}
+
+body.light-mode .btn-secondary {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+body.light-mode .btn-secondary:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
 /* =============================================
    Global Resets
    ============================================= */
@@ -273,7 +305,8 @@ button {
   background: rgba(255, 255, 255, 0.05);
 }
 
-.lang-switch {
+.lang-switch,
+.theme-mode-toggle {
   margin-left: 12px;
   padding: 6px 14px;
   border-radius: var(--radius-sm);
@@ -283,9 +316,13 @@ button {
   font-weight: 600;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.lang-switch:hover {
+.lang-switch:hover,
+.theme-mode-toggle:hover {
   border-color: var(--border-hover);
   color: var(--text-primary);
   background: rgba(255, 255, 255, 0.06);
@@ -796,9 +833,11 @@ button {
     padding: 12px 0;
   }
 
-  .lang-switch {
+  .lang-switch,
+  .theme-mode-toggle {
     margin-left: 0;
     width: fit-content;
+    margin-top: 8px;
   }
 
   .menu-toggle {
