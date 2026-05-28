@@ -1144,4 +1144,58 @@ button {
 .theme-dot-option.cyberpunk { background: #f97316; color: #f97316; }
 .theme-dot-option.glacier { background: #0284c7; color: #0284c7; }
 
+/* =============================================
+   Scroll Reveal Animations
+   ============================================= */
+
+.reveal-element {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.reveal-fade-up {
+  transform: translateY(30px);
+}
+
+.reveal-fade-in {
+  transform: translateY(0);
+}
+
+.reveal-scale-up {
+  transform: scale(0.96) translateY(10px);
+}
+
+.reveal-element.revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Accent link hover underline effect */
+.site-header a {
+  position: relative;
+}
+
+.site-header .header-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-base);
+  border-radius: 2px;
+}
+
+.site-header .header-nav a:hover::after,
+.site-header .header-nav a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
 
