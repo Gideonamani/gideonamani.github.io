@@ -1,9 +1,16 @@
-# An attempt to build a multilingual personal blog.
+# React + Vite
 
-Hello World! Salamu Dunia!
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-I have been wishing to start writing a blog for a while now. It seems to be the cool thing to do these days. Everybody seems have one. I wanted mine though to be in several languages. I speak a bit of English but it's frankly not the language I had been used to speak in my early childhood days. Swahili is the language I grew up speaking from as early as I can remember but fortunately or unfortunately, my education has been dominated by English as the language of instruction. So I wanted to have a blog that was in both my native language and in English. This turns out to not be as simple as I first expected. After a couple of weeks of trial and error, skimming and scanning gists and posts on stackoverflow, I think I might have the foundation to start building one.
+Currently, two official plugins are available:
 
-Feedback and suggestions are very welcomed.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-To check out the blog, visit: [https//:gideonamani.github.io/blog](https://gideonamani.github.io/blog "Blog Home Page").
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

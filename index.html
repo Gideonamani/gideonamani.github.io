@@ -1,29 +1,36 @@
----
-layout: personal-default
-lang: "en"
-core_page_id: p0000
-title: "Gideonamani – Instructor, Investor, Developer"
-description: "The personal website of Gideonamani, instructor, investor, developer and TechnoFlaneur. Discover projects, blogs, talks and more."
-keywords: "Gideonamani blog, Gideonamani projects, Gideonamani talks"
-image: "/assets/images/hero.png"
-image_is_local: true
-image_alt: "Abstract blue and teal waves"
----
-
-<div class="page-content home">
-  <div class="hero">
-    <h1>Hello! I'm Gideonamani</h1>
-    <h2>Instructor • Investor • Developer • TechnoFlaneur</h2>
-    <p class="lead">
-      Welcome to my digital space where I explore technology, investments and ideas from unique perspectives.
-    </p>
-    <p>
-      <a href="/blog/" class="btn primary-btn">Read my blog</a>
-      <a href="/about/" class="btn secondary-btn">Learn about me</a>
-    </p>
-  </div>
-
-  <div class="home-intro">
-    <p>Check out my latest projects, talks, and writings. Stay tuned!</p>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The personal website of Gideonamani – Instructor, Investor, Developer and TechnoFlaneur. Discover projects, blogs, talks and more." />
+    <meta name="keywords" content="Gideonamani, blog, projects, talks, developer, investor, instructor" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gideonamani – Instructor, Investor, Developer" />
+    <meta property="og:description" content="The personal website of Gideonamani. Discover projects, blogs, talks and more." />
+    <meta property="og:url" content="https://gideonamani.github.io" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#030712" />
+    <title>Gideonamani – Instructor, Investor, Developer</title>
+    <!-- SPA redirect decoder for GitHub Pages -->
+    <script type="text/javascript">
+      (function () {
+        var segmentCount = 0;
+        var loc = window.location;
+        if (loc.search[1] === '/') {
+          var decoded = loc.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            loc.pathname.slice(0, -1) + decoded + loc.hash
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
