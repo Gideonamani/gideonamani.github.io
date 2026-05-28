@@ -36,15 +36,22 @@ export default function BlogCategory() {
       ) : (
         <div className="post-list">
           {posts.map(post => (
-            <div className="post-item" key={post.id}>
-              <h3>{post.title[lang]}</h3>
+            <a
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="post-item"
+              key={post.id}
+              style={{ textDecoration: 'none', display: 'block' }}
+            >
+              <h3>{post.title[lang]} →</h3>
               <p className="post-excerpt">{post.description[lang]}</p>
               {post.keywords && post.keywords.length > 0 && (
                 <p className="post-meta" style={{ marginTop: '8px' }}>
                   {post.keywords.join(', ')}
                 </p>
               )}
-            </div>
+            </a>
           ))}
         </div>
       )}

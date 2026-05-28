@@ -34,13 +34,20 @@ export default function Blog() {
       </h2>
       <div className="post-list">
         {blogPosts.map(post => (
-          <div className="post-item" key={post.id}>
-            <h3>{post.title[lang]}</h3>
+          <a
+            href={post.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={post.id}
+            className="post-item"
+            style={{ textDecoration: 'none', display: 'block' }}
+          >
+            <h3>{post.title[lang]} →</h3>
             <p className="post-meta">
               {t.blog.categories[post.category]?.name}
             </p>
             <p className="post-excerpt">{post.description[lang]}</p>
-          </div>
+          </a>
         ))}
       </div>
     </div>

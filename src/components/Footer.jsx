@@ -24,6 +24,17 @@ export default function Footer() {
           <a href="https://www.facebook.com/gmarress" target="_blank" rel="noopener noreferrer" aria-label="Facebook">👤</a>
           <a href="https://vk.com/Gideonamani" target="_blank" rel="noopener noreferrer" aria-label="VK">💬</a>
         </div>
+        <p className="footer-disclaimer" style={{
+          fontSize: '0.8rem',
+          color: 'var(--text-muted)',
+          maxWidth: '600px',
+          lineHeight: '1.6',
+          margin: '8px auto 16px',
+          fontStyle: 'italic',
+          opacity: 0.75
+        }}>
+          {t.footer.disclaimer}
+        </p>
         <p className="footer-copyright">
           {t.footer.copyright.replace('{year}', year)}
         </p>

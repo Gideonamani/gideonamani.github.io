@@ -1,35 +1,50 @@
 export const blogCategories = [
-  { id: 'book-summaries', icon: '📚' },
-  { id: 'cool-projects', icon: '🚀' },
-  { id: 'random-thoughts', icon: '💭' },
-  { id: 'travels', icon: '✈️' },
+  { id: 'notebook-lms', icon: '🧠' },
+  { id: 'substack-blog', icon: '✍️' },
+  { id: 'youtube-channel', icon: '🎥' },
 ];
 
 export const blogPosts = [
   {
-    id: 'the-medium-is-the-metaphor',
-    category: 'book-summaries',
+    id: 'amusing-ourselves-to-death-workspace',
+    category: 'notebook-lms',
     title: {
-      en: 'The Media is the Metaphor',
-      sw: 'Njia ya Usambazaji Ndiyo Sitiari',
+      en: 'Amusing Ourselves to Death AI Hub',
+      sw: 'Kitovu cha AI cha Amusing Ourselves to Death',
     },
     description: {
-      en: 'Chapter One Summary of the book Amusing Ourselves to Death.',
-      sw: 'Muhtasari wa Sura ya Kwanza ya kitabu Amusing Ourselves to Death.',
+      en: 'Interactive AI-curated workspaces, audio discussions, and deep summaries of Neil Postman\'s classic critique of television media.',
+      sw: 'Nafasi za kazi zilizoratibiwa na AI, majadiliano ya sauti, na muhtasari wa kitabu cha Neil Postman kuhusu vyombo vya habari vya televisheni.',
     },
-    keywords: ['language', 'media'],
+    keywords: ['NotebookLM', 'AI Workspace', 'Neil Postman', 'Media Philosophy'],
+    url: 'https://notebooklm.google.com/',
   },
   {
-    id: 'building-a-jekyll-multilingual-blog',
-    category: 'cool-projects',
+    id: 'substack-portfolio-update',
+    category: 'substack-blog',
     title: {
-      en: 'Building a Jekyll Multilingual Blog',
-      sw: 'Kutengeneza Blog ya Lugha Kadhaa kwa Jekyll',
+      en: 'Gideonamani on Substack',
+      sw: 'Gideonamani kwenye Substack',
     },
     description: {
-      en: 'How I built a multilingual blog using Jekyll and GitHub Pages.',
-      sw: 'Jinsi nilivyotengeneza blog ya lugha kadhaa kwa kutumia Jekyll na GitHub Pages.',
+      en: 'Weekly essays on technology development, assets investment, capital allocation, and techno-flaning philosophy.',
+      sw: 'Insha za kila wiki kuhusu maendeleo ya teknolojia, uwekezaji wa rasilimali, ugawaji wa mitaji, na falsafa ya techno-flaning.',
     },
-    keywords: ['jekyll', 'blog', 'multilingual'],
+    keywords: ['Substack', 'Capital Allocations', 'Software bit systems', 'Essays'],
+    url: 'https://substack.com/',
+  },
+  {
+    id: 'youtube-coding-tutorials',
+    category: 'youtube-channel',
+    title: {
+      en: 'TechnoFlaneur Programming Tutorials',
+      sw: 'Mafunzo ya Programu ya TechnoFlaneur',
+    },
+    description: {
+      en: 'Clean code walk-throughs, React setup guides, full-stack frameworks, and tutorials on pedagogy.',
+      sw: 'Miongozo ya kuandika code, usanidi wa React, mifumo kamili ya programu, na mafunzo kuhusu ufundishaji.',
+    },
+    keywords: ['YouTube', 'Programming Tutorials', 'React Guides', 'Pedagogy'],
+    url: 'https://youtube.com/',
   },
 ];
